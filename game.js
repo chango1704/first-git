@@ -17,7 +17,7 @@ function preguntar() {
 
         // Validación de entrada
         if (isNaN(intento)) {
-            console.log("❌ Ingresa un número válido.");
+            console.log("❌ Ingresa un número válido.😭😡");
             return preguntar();
         }
 
