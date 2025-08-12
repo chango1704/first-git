@@ -9,7 +9,7 @@ const rl = readline.createInterface({
 const numeroSecreto = Math.floor(Math.random() * 100) + 1;
 let intentos = 0; // contador de intentos
 
-console.log("Adivina el número entre 1 y 100");
+console.log("🤑Adivina el número entre 1 y 100🤑");
 
 function preguntar() {
     rl.question("Tu número: ", (respuesta) => {
