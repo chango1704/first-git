@@ -7,6 +7,7 @@ const rl = readline.createInterface({
 });
 
 const numeroSecreto = Math.floor(Math.random() * 100) + 1;
+let intentos = 0; // contador de intentos
 
 console.log("Adivina el número entre 1 y 100");
 
@@ -20,8 +21,10 @@ function preguntar() {
             return preguntar();
         }
 
+        intentos++; // sumar intento válido
+
         if (intento === numeroSecreto) {
-            console.log("🎉 ¡Correcto!");
+            console.log(`🎉 ¡Correcto! Lo lograste en ${intentos} intento(s).`);
             rl.close();
         } else {
             const pista = Math.abs(numeroSecreto - intento) <= 10 ? "Caliente 🔥" : "Frío ❄️";
